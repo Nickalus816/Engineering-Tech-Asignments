@@ -2,6 +2,8 @@
 //Nickalus Lowrey
 //Version 0.0.1
 
+//Intructions: Comment out the one your not using 
+
 //User Input
 #include <iostream>
 #include <string>

@@ -1,8 +1,18 @@
-// Third Prompt
+//Adition Calculator
 #include <iostream>
+
 int main(){
-std::cout << "Hello, my name is Nickalus" << std::endl;
-std::cout << std::endl;
-std::cout << "\"AHHHH\" " << std::endl;
-return 0;
+    int num1, num2, sum;
+
+    std::cout << "Enter the first number: ";
+    std::cin >> num1;
+
+    std::cout << "Enter the second number: ";
+    std::cin >> num2;
+
+    sum = num1 + num2;
+
+    std::cout << "The sum of " << num1 << " and " << num2 << " is: " << sum << std::endl;
+
+    return 0;
 }

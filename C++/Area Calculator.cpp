@@ -40,10 +40,10 @@ int rectangle() {
 int parallelogram() {
     double num1, num2, sum;
 
-    std::cout << "Enter the first Length: ";
+    std::cout << "Enter the Base: ";
     std::cin >> num1;
 
-    std::cout << "Enter the second Width: ";
+    std::cout << "Enter the Hight: ";
     std::cin >> num2;
 
     sum = num1 * num2;
@@ -56,12 +56,49 @@ int parallelogram() {
 int circle() {
     double num1, PI, sum;
 
-    std::cout << "Enter the first Length: ";
+    PI = 3.14159;
+
+    std::cout << "Enter the Radius: ";
     std::cin >> num1;
 
     sum = num1 * num1 * PI;
 
     std::cout << "The Area of " << num1 << " and " << PI << " is: " << sum << std::endl;
+
+    return 0;
+}
+
+int trapazoid() {
+    double base1, base2, height, area;
+
+    std::cout << "Enter the length of base 1: ";
+    std::cin >> base1;
+
+    std::cout << "Enter the length of base 2: ";
+    std::cin >> base2;
+
+    std::cout << "Enter the height: ";
+    std::cin >> height;
+
+    area = 0.5 * (base1 + base2) * height;
+
+    std::cout << "The area of the trapezoid is: " << area << std::endl;
+
+    return 0;
+}
+
+int triangle() {
+    double num1, num2, sum;
+
+    std::cout << "Enter the Base: ";
+    std::cin >> num1;
+
+    std::cout << "Enter the Hight: ";
+    std::cin >> num2;
+
+    sum = num1 * num2 / 2;
+
+    std::cout << "The Area of " << num1 << " and " << num2 << " is: " << sum << std::endl;
 
     return 0;
 }
@@ -77,7 +114,7 @@ int main() {
         std::cout << "2. Rectangle\n";
         std::cout << "3. Parallelogram\n";
         std::cout << "4. Circle\n";
-        std::cout << "5. Pentagon\n";
+        std::cout << "5. Trapazoid\n";
         std::cout << "6. Triangle\n";
         std::cout << "7. Exit Program\n";
         std::cout << "Enter your choice (1-7): ";
@@ -104,8 +141,8 @@ int main() {
                 circle();
                 break;
             case 5:
-                std::cout << "You selected Pentagon!\n";
-                pentagram();
+                std::cout << "You selected Trapazoid!\n";
+                trapazoid();
                 break;
             case 6:
                 std::cout << "You selected Triangle!\n";
@@ -116,7 +153,7 @@ int main() {
                 running = false;
                 break;
             default:
-                std::cout << "Invalid choice. Please enter a number between 1-5.\n";
+                std::cout << "Invalid choice. Please enter a number between 1-7.\n";
         }
     }
 

@@ -4,7 +4,8 @@
 
 //Instuctions when using a code comment out other codes.
 
-//Fix the logic error
+// //Fix the logic error
+
 #include <iostream>
 
 int main() {
@@ -20,11 +21,11 @@ int main() {
     return 0;
 }
 
-// first prompt
+// // first prompt
 
 #include <iostream>
 
-int first() {
+int main() {
     int number;
     
     std::cout << "Enter a number: ";
@@ -41,11 +42,11 @@ int first() {
     return 0;
 }
 
-// Second Prompt
+// // Second Prompt
 
 #include <iostream>
 
-int second() {
+int main() {
     bool loggedIn = true;
     bool banned = false;
 
@@ -58,7 +59,7 @@ int second() {
     return 0;
 }
 
-// Third prompt
+// // Third prompt
 
 #include <iostream>
 
@@ -79,7 +80,7 @@ int main() {
     return 0;
 }
 
-// Fourth Prompot
+// // Fourth Prompot
 
 #include <iostream>
 #include <string>
